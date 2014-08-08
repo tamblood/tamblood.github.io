@@ -17,12 +17,17 @@ p {
 	height: 50px;
 	width: 200px;
 	float: left;
+	margin-left: 80px;
 }
 
 .date {
 	color: #d9edf7;
 	float: right;
-	padding-right: 50px;
+	margin-right: 80px;
+	border: 1px solid #dff0d8;
+	text-align: center;
+	padding-right: 40px;
+	padding-left: 40px;
 	
 }
 
@@ -35,15 +40,23 @@ p {
 }
 
 .textofblog {
-	font-size: 12px;
+	font-size: 13px;
 	font-family: serif;
 	float: left;
+	clear: left;
+	margin-left: 80px;
+	margin-right: 80px;
 }
 
 .footer {
 	clear: both;
 	font-size: 8px;
 	font-family: serif;
-	color: violet;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 80px;
+	margin-right: 80px;
+	border-bottom: 1px solid black;
 
 }
