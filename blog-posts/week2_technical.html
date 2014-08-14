@@ -1,0 +1,71 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Tam Blood blog template</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"
+</head>
+
+<body>
+	<h3 class="title">
+	    Positioning in CSS	
+	</h3>
+	<div class="date">
+		<p class="month">August</p>
+		<p class="day">14</p>
+		<p class="year">2014</p>
+	</div>
+
+	<div>
+		<p class="textofblog">To discuss the difference between relative, absolute and fixed positioning in CSS, let's look at a simple html file:
+    </p>
+    <img src="../positioning/original_html.png" />
+		<p class="textofblog">and a simple css file:
+    </p>
+    <img src="../positioning/original_css.png" />
+    <p class="textofblog">which will produce the output:
+    </p>
+    <img src="../positioning/original_screenshot.png" />
+
+    <!-- relative section -->
+    <p class="textofblog">Now to demonstrate relative positioning, which offsets an element relative to its original position in the document, we can change our box 2 to have position: relative like so in our css file:
+		</p>
+    <img src="../positioning/relative_code.png" />
+    <p class="textofblog">which will cause box 2 to be offset 100px to the left from its original position like so: 
+    </p>
+    <img src="../positioning/relative_screenshot.png" />
+
+    <!--absolute section -->
+    <p class="textofblog">To demonstrate absolute positioning, which removes an object from the normal flow of the document, and defaults to offsets relative to the viewport ( an exception to this we will see below involving absolute items nested inside a relative object ), we can make box 2 have absolute positioning like so:
+    </p>
+    <img src="../positioning/absolute_code.png" />
+    <p class="textofblog">which will have the result of box to being offset 50px to the left and 50px from the top relative to the viewport:
+    </p>
+    <img src="../positioning/absolute_screenshot.png" />
+
+    <!-- fixed section -->
+    <p class="textofblog">Fixed position, always is relative to the viewport and stays put even during a scroll event. We can change our box 2 to be fixed like so:
+    </p>
+    <img src="../positioning/fixed_code.png" />
+    <p class="textofblog">which will cause box 2 to be set with offsets of 0 to the left and 50px from the top relative to the viewport:
+    </p>
+    <img src="../positioning/fixed_screenshot.png" />
+
+    <!-- absolute within relative section -->
+    <p class="textofblog">If we change our html to nest box 2 inside of box 3, we can demonstrate how one object can have relative position to another one by the parent object being position: relative ( or anything other than static ) and the child object being position: absolute. In this case, the child will be offset relative to the parent with position: relative like so:
+    </p>
+    <img src="../positioning/abs_rel_html.png" />
+
+    <p class="textofblog">our css to reflect this is: 
+    </p>
+    <img src="../positioning/abs_rel_css.png" />
+    <p class="textofblog">and thus box 2 is positioned 50px to the left and 50px from the top, relative to box 3 in the rendering:
+    </p>
+    <img src="../positioning/abs_rel_screenshot.png" />
+    <p class="textofblog">Hope this is helpful! 
+    </p>
+	</div>
+
+	<h5 class="footer">Posted by Tam</h5>
+</body>
+
+</html>
