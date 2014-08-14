@@ -2,10 +2,10 @@ p {
 	font-size: 12px;
 }
 
-.image {
+img {
 	display: block;
-	height: 10px;
-	width: 10px;
+	height: 400px;
+        margin: auto;
 }
 
 .title {
