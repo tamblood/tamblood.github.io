@@ -12,19 +12,19 @@ img {
 	font-size: 25px;
 	font-family: serif;
 	font-weight: bold;
-	color: #dff0d8;
+	color: #dff2d8;
 	display: block;
 	height: 50px;
 	width: 200px;
 	float: left;
-	margin-left: 80px;
+	margin-left: 160px;
 }
 
 .date {
-	color: #d9edf7;
+	color: #d9edf9;
 	float: right;
-	margin-right: 80px;
-	border: 1px solid #dff0d8;
+	margin-right: 160px;
+	border: 1px solid #dff2d8;
 	text-align: center;
 	padding-right: 40px;
 	padding-left: 40px;
@@ -44,8 +44,8 @@ img {
 	font-family: serif;
 	float: left;
 	clear: left;
-	margin-left: 80px;
-	margin-right: 80px;
+	margin-left: 160px;
+	margin-right: 160px;
 }
 
 .footer {
@@ -55,8 +55,8 @@ img {
 	font-weight: bold;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-left: 80px;
-	margin-right: 80px;
+	margin-left: 160px;
+	margin-right: 160px;
 	border-bottom: 1px solid black;
 
 }
