@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Tam Blood blog template</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"
+</head>
+
+<body>
+	<h3 class="title">
+		Ruby Enumerable#cycle
+	</h3>
+	<div class="date">
+		<p class="month">August</p>
+		<p class="day">30</p>
+		<p class="year">2014</p>
+	</div>
+
+	<div>
+		<p class="textofblog">The ruby enumerable class gives us many ways to work with collections. Today, let's look at the Enumerable:cycle method. In the simplest sense, cycle gives us a way to continually yield the elements of an object to a code block over and over. Cycle also has an optional argment, which specifies how many times the elements should be yielded to a code block. This in effect gives us a way to have a nested loop. 
+        </p>
+		<p class="textofblog">For example, if we create a small ruby program like so:
+        </p>
+        <img src="../imgs/cycle_code_4.png" /> 
+        <p class="textofblog">We see that cycle loops over the elements of array 4 times, as instructed:
+        </p>
+        <img src="../imgs/cycle_output_4.png" /> 
+        <p class="textofblog">However, if we leave off the argument, cycle loops indefinitely, as we can see from taking out the argument of 4:
+        </p>
+        <img src="../imgs/cycle_code_infinity.png" /> 
+        <p class="textofblog">This produces an unending loop of numbers on our screen:
+        </p>
+        <img src="../imgs/cycle_output_infinity.png" /> 
+        <p class="textofblog">Which we can only stop by hitting Control-c 
+		</p>
+        <img src="../imgs/cycle_output_infinity2.png" /> 
+        <p class="textofblog">We could also add code which would break out of the loop as well.
+		</p>
+	</div>
+
+	<h5 class="footer">Posted by Tam</h5>
+</body>
+
+</html>
