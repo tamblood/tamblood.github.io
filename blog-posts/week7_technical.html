@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Tam Blood blog template</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"
+</head>
+
+<body>
+	<h3 class="title">
+		SQL Injections
+	</h3>
+	<div class="date">
+		<p class="month">September</p>
+		<p class="day">18</p>
+		<p class="year">2014</p>
+	</div>
+
+	<div>
+		<p class="textofblog">Let's look at a potential danger in allowing users to interact with your database queries - SQL injections. Consider an example in which we have a webpage and want to allow the user to input their user_id for a query to the database:
+        </p>
+        <img src="../imgs/week7_injection_rb.png" /img>
+		<p class="textofblog">The way to avoid injections is to use parameters. Parameters will be checked by the sql engine, and not treated as literal SQL statements to be executed. Let's look at an example of this using ASP.NET: 
+        </p>
+        <img src="../imgs/sql_parameters.rb" /img>
+        <p class="textofblog">Parameters are checked by the sql engine for appropriateness and therefore injections have less chance of making it through. So there you have it - use parameters to avoid injections!
+        </p>
+        <p class="textofblog"><!--Insert fourth paragraph here--> 
+		</p>
+	</div>
+
+	<h5 class="footer">Posted by Tam</h5>
+</body>
+
+</html>
