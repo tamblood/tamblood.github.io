@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Tam Blood blog template</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"
+</head>
+
+<body>
+	<h3 class="title">
+		Active Record
+	</h3>
+	<div class="date">
+		<p class="month">September</p>
+		<p class="day">26</p>
+		<p class="year">2014</p>
+	</div>
+
+	<div>
+		<p class="textofblog">Let's take a 5,000 foot level view of Active Record. What is Active Record? In short, Active Record is an ORM, an Object Relations Mapping. When stated as ActiveRecord with no spaces, this generally refers to the Active Record implementation within Ruby that is used as part of the Rails framework. 
+        </p>
+		<p class="textofblog">So what's an object relations mapping? This is a way to wrap up data into an object and associated methods. For the instance of Active Record, this involves wrapping up a row of a database table into an object which has methods to update the row. ActiveRecord thus becomes the connector piece between ruby code and an SQL database, for example, allowing code to work directly with the database without need for SQL statements. 
+        </p>
+        <p class="textofblog">So how does this work? Convention, it turns out, plays a large part. The ActiveRecord ruby implementation counts on a class having a database table with a pluralized name. For example, if we have a class named "lamp", the convention is to have a database table named "Lamps". This reliance on convention reduces the need for configuration within ActiveRecord. 
+        </p>
+        <p class="textofblog">For those familiar with Rails, ActiveRecord is the M, or the Model in the Model, View Controller. Which essentially means the database piece. There is more to this story, but for now, rest assured knowing that ActiveRecord is the cozy warm blanket in ruby shielding you from the cold, hard, raw sql statements. 
+		</p>
+	</div>
+
+	<h5 class="footer">Posted by Tam</h5>
+</body>
+
+</html>
