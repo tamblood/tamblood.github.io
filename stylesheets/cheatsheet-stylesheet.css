@@ -1,0 +1,112 @@
+p {
+	font-size: 12px;
+}
+
+h2 {
+	font-size: 25px;
+	font-family: serif;
+	color: #dff2d8;
+	height: 50px;
+	width: 200px;
+	margin: auto;
+}
+
+h3 {
+	font-size: 15px;
+	font-family: serif;
+	color: #022d8e;
+	height: 50px;
+	width: 100px;
+	margin: auto;
+}
+
+img {
+	display: block;
+	height: 400px;
+        margin: auto;
+}
+
+.container {
+	display: block;
+	width: 90%;
+	margin-left: 160px;
+}
+
+.title {
+	font-size: 25px;
+	font-family: serif;
+	font-weight: bold;
+	color: #dff2d8;
+	display: block;
+	height: 50px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header {
+	font-size: 25px;
+	font-family: serif;
+	font-weight: bold;
+	color: #dff2d8;
+	display: block;
+	height: 50px;
+	width: 200px;
+	padding: 25px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+
+.break {
+	display: block;
+}
+
+
+.col1, .col2, .col3 {
+	width: 25%;
+	float: left;
+	padding: 10px;
+}
+
+.code_block {
+	background-color: #dddddd;
+	font-size: 12px;
+	font-family: sans-serif;
+	padding: 10px;
+	min-height: 25px;
+	margin: 5px;
+	border-radius: 5%;
+}
+
+.example_title {
+	text-align: center;
+	font-size: 14;
+	border-bottom: 1px solid;
+	padding: 10px;
+}
+
+.textofblog {
+	font-size: 13px;
+	font-family: serif;
+	float: left;
+	clear: left;
+	margin-left: 160px;
+	margin-right: 160px;
+}
+
+.cf {
+	clear: both;
+}
+
+.footer {
+	clear: both;
+	font-size: 8px;
+	font-family: serif;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 160px;
+	margin-right: 160px;
+	border-bottom: 1px solid black;
+
+}

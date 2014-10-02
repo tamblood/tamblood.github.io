@@ -1,0 +1,198 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Tam Blood blog template</title>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/cheatsheet-stylesheet.css"
+</head>
+
+<body>
+ <div class=header>Ruby Enumerables
+ </div>
+ <div class="container"> 
+<!--   <h3 class="title">
+     Ruby Enumerables Cheatsheet
+   </h3>
+ -->
+ 
+   <div class=col1>
+     <h3>Each methods
+     </h3>
+     <p class="example_title">
+        Each_with_index
+     </p>
+     <div class="example">
+ 
+        <div class="code_block">
+          <p class="code_block_line">
+            array = [1,2,3]
+          </p>
+          <p class="code_block_line">
+            array.each_with_index {|x, i| puts "element #{x} is at index #{i}"}
+          </p>
+          <p class="code_block_line">
+            element 1 is at index 0
+          </p>
+          <p class="code_block_line">
+            element 2 is at index 1
+          </p>
+          <p class="code_block_line">
+            element 3 is at index 2
+          </p>
+        </div>
+ 
+     </div>
+     <p class="example_title">
+        Each_slice
+     </p>
+ 
+     <div class="code_block">
+       <p class="code_block_line">
+         array = [1,2,3,4,5,6,7,8,9]
+       </p>
+
+       <p class="code_block_line">
+         array.each_slice(3) { |a| p a }
+       </p>
+       <p class="code_block_line">
+        [1, 2, 3]
+       </p>
+       <p class="code_block_line">
+        [4, 5, 6]
+       </p>
+       <p class="code_block_line">
+        [7, 8, 9]
+       </p>
+ 
+     </div>
+ 
+   </div>
+ 
+   <div class=col2>
+     <h3>Map and find methods
+     </h3>
+     <p class=example_title>
+        Map
+     </p> 
+     <div class="code_block">
+       <p class="code_block_line">
+         array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+       </p>
+       <p class="code_block_line">
+         array.map! { |x| x * 2 } 
+       </p>
+       <p class="code_block_line">
+         => [2, 4, 6, 8, 10, 12, 14, 16, 18]
+       </p>
+     </div>
+     <p class="example_title">
+        Find
+     </p>
+     <div class="code_block">
+       <p class="code_block_line">
+         array = [2, 4, 6, 8, 10, 12, 14, 16, 18]
+       </p>
+       <p class="code_block_line">
+         array.find { |x| x % 3 == 0 }
+       </p>
+       <p class="code_block_line">
+         => 6
+       </p>
+       <p class="code_block_line">
+         array.find_all { |x| x % 3 == 0 }
+       </p>
+       <p class="code_block_line">
+         => [6, 12, 18]
+       </p>
+     </div>
+   </div>
+ 
+   <div class=col3>
+     <h3>Inject and cycle methods
+     </h3>
+     <p class=example_title>
+        Inject
+     </p>
+     <div class="code_block">
+       <p class="code_block_line">
+        array = [1,2,3]
+       </p>
+       <p class="code_block_line">
+        array.inject(0) {|acc, x| x + acc }
+       </p>
+       <p class="code_block_line">
+        => 6
+       </p>
+     </div>
+ 
+     <p class=example_title>
+        Cycle
+     </p>
+     <div class="code_block">
+       <p class="code_block_line">
+        array = [1,2,3]
+       </p>
+       <p class="code_block_line">
+        => [1, 2, 3]
+       </p>
+       <p class="code_block_line">
+        array.cycle(4) { |num| puts num }
+       </p>
+       <p class="code_block_line">
+        1
+       </p>
+       <p class="code_block_line">
+        2
+       </p>
+       <p class="code_block_line">
+        3
+       </p>
+       <p class="code_block_line">
+        1
+       </p>
+       <p class="code_block_line">
+        2
+       </p>
+       <p class="code_block_line">
+        3
+       </p>
+       <p class="code_block_line">
+        1
+       </p>
+       <p class="code_block_line">
+        2
+       </p>
+       <p class="code_block_line">
+        3
+       </p>
+       <p class="code_block_line">
+        1
+       </p>
+       <p class="code_block_line">
+        2
+       </p>
+       <p class="code_block_line">
+        3
+       </p>
+     </div>
+ 
+   </div>
+ 
+         
+   <div>
+     <p class="textofblog"><!--Insert first paragraph here -->
+         </p>
+     <p class="textofblog"><!--Insert second paragraph here --> 
+         </p>
+         <p class="textofblog"><!--Insert third paragraph here-->
+         </p>
+         <p class="textofblog"><!--Insert fourth paragraph here--> 
+     </p>
+   </div>
+   <div class="cf">
+   </div>
+
+  </div> <!-- class container -->
+	<h5 class="footer">Posted by Tam</h5>
+</body>
+
+</html>
